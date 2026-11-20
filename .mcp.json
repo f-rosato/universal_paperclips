@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "paperclips": {
+      "type": "stdio",
+      "command": ".venv/Scripts/python.exe",
+      "args": ["mcp_server.py"],
+      "env": {
+        "PAPERCLIPS_HARNESS": "http://127.0.0.1:8765"
+      }
+    }
+  }
+}

@@ -23,7 +23,7 @@
         ring.style.borderRadius = getComputedStyle(el).borderRadius;
         ring.style.setProperty('--thump-color', color);
         ring.addEventListener('animationend', function () { ring.remove(); });
-        setTimeout(function () { ring.remove(); }, 1000); // fallback cleanup
+        setTimeout(function () { ring.remove(); }, 2000); // fallback cleanup
         document.body.appendChild(ring);
     }
 
@@ -34,10 +34,11 @@
         try {
             el.animate([
                 { transform: 'scale(1)' },
-                { transform: 'scale(0.92)', offset: 0.25 },
-                { transform: 'scale(1.04)', offset: 0.6 },
+                { transform: 'scale(0.82)', offset: 0.2 },
+                { transform: 'scale(1.12)', offset: 0.55 },
+                { transform: 'scale(0.97)', offset: 0.8 },
                 { transform: 'scale(1)' }
-            ], { duration: 260, easing: 'ease-out', composite: 'add' });
+            ], { duration: 550, easing: 'ease-out', composite: 'add' });
         } catch (err) { /* composite unsupported: skip squish */ }
     }
 

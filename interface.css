@@ -793,8 +793,8 @@ p.hypnoDrone {
    instead of restarting. --thump-color is set randomly per click. */
 @keyframes thump-ring {
    0%   { box-shadow: 0 0 0 0 var(--thump-color), inset 0 0 0 999px var(--thump-color); opacity: 0.9; }
-   30%  { box-shadow: 0 0 0 4px var(--thump-color), inset 0 0 0 999px transparent; opacity: 0.7; }
-   100% { box-shadow: 0 0 0 12px var(--thump-color), inset 0 0 0 999px transparent; opacity: 0; }
+   30%  { box-shadow: 0 0 0 10px var(--thump-color), inset 0 0 0 999px transparent; opacity: 0.75; }
+   100% { box-shadow: 0 0 0 30px var(--thump-color), inset 0 0 0 999px transparent; opacity: 0; }
 }
 
 .thump-ring {
@@ -802,9 +802,9 @@ p.hypnoDrone {
    pointer-events: none;
    z-index: 9999;
    mix-blend-mode: multiply;
-   animation: thump-ring 400ms ease-out forwards;
+   animation: thump-ring 900ms ease-out forwards;
 }
 
 @media (prefers-reduced-motion: reduce) {
-   .thump-ring { animation-duration: 250ms; }
+   .thump-ring { animation-duration: 500ms; }
 }

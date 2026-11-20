@@ -8,6 +8,13 @@
       "isBackground": true,
       "problemMatcher": [],
       "group": { "kind": "build", "isDefault": true }
+    },
+    {
+      "label": "harness",
+      "type": "shell",
+      "command": ".venv/Scripts/python harness.py",
+      "isBackground": true,
+      "problemMatcher": []
     }
   ]
 }

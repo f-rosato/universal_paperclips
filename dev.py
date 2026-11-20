@@ -2,7 +2,7 @@
 """Zero-dependency dev server with live reload.
 
 Usage:
-    python dev.py              # http://localhost:8000
+    python dev.py              # http://localhost:8100
     python dev.py --port 3000
     python dev.py --no-open    # don't open a browser tab
 
@@ -116,7 +116,7 @@ class Server(socketserver.ThreadingMixIn, http.server.HTTPServer):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--port", type=int, default=int(os.environ.get("PORT", 8000)))
+    ap.add_argument("--port", type=int, default=int(os.environ.get("PORT", 8100)))
     ap.add_argument("--host", default="127.0.0.1")
     ap.add_argument("--no-open", action="store_true")
     args = ap.parse_args()
